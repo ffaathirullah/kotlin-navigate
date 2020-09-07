@@ -10,10 +10,12 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
                 <fragment
-                    android:id="@+id/tittleFragment"
-                    android:name="com.example.android.navigation.Tittle"
+                    android:id="@+id/myNavHostFragment"
+                    android:name="androidx.navigation.fragment.NavHostFragment"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    app:navGraph="@navigation/navigate"
+                    app:defaultNavHost="true"
                     />
         </LinearLayout>
 
