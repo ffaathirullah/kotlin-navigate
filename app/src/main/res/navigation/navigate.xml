@@ -16,5 +16,22 @@
         android:id="@+id/gameFragment2"
         android:name="com.example.android.navigation.GameFragment"
         android:label="fragment_game"
-        tools:layout="@layout/fragment_game" />
+        tools:layout="@layout/fragment_game" >
+        <action
+            android:id="@+id/action_gameFragment2_to_gameOverFragment2"
+            app:destination="@id/gameOverFragment2" />
+        <action
+            android:id="@+id/action_gameFragment2_to_gameWonFragment2"
+            app:destination="@id/gameWonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameWonFragment"
+        android:name="com.example.android.navigation.GameWonFragment"
+        android:label="fragment_game_won"
+        tools:layout="@layout/fragment_game_won" />
+    <fragment
+        android:id="@+id/gameOverFragment2"
+        android:name="com.example.android.navigation.GameOverFragment"
+        android:label="fragment_game_over"
+        tools:layout="@layout/fragment_game_over" />
 </navigation>
